@@ -1,7 +1,25 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
-const inter = Inter({ subsets: ['latin'] })
+const unbounded = localFont({
+  src: [
+    {
+      path: '../../public/fonts/Unbounded.ttf'
+    }
+  ],
+  variable: '--font-unbounded'
+})
+
+const montserrat = localFont({
+  src: [
+    {
+      path: '../../public/fonts/Montserrat.ttf'
+    }
+  ],
+  variable: '--font-montserrat'
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,8 +28,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="ru">
+      <body className={`${unbounded.variable} ${montserrat.variable} font-sans text-white bg-black`}>
+        <Header />
+          {children}
+        <Footer />
+      </body>
     </html>
   )
 }
