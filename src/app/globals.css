@@ -16,11 +16,13 @@
 /*  }*/
 /*}*/
 
-.header-nav a:hover {
+.header-nav a:hover,
+.header-social a:hover {
     color: #CCB35B;
 }
 
-.header-nav a:hover path {
+.header-nav a:hover path,
+.header-social a:hover path {
     fill: #CCB35B;
 }
 
@@ -28,8 +30,17 @@
     color: #CCB35B;
 }
 
+svg path {
+    transition: all .3s;
+    animation-duration: .3s;
+}
+
 .link-active path {
     fill: #CCB35B;
+}
+
+.cursor-play {
+    cursor: url(/img/home/cursor-play.svg) 35 35,pointer;
 }
 
 

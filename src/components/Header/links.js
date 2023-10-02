@@ -1,4 +1,5 @@
 import {guideSVG} from "@/components/SVGs/guide";
+import {svgFacebook} from "@/components/SVGs/svgs";
 
 export const navLinks = [
     {
@@ -25,5 +26,30 @@ export const navLinks = [
         link: '/contacts',
         text: 'Контакты',
         icon: guideSVG.svgContacts
+    },
+];
+
+
+export const socialLinks = [
+    {
+        link: '#',
+        text: 'facebook',
+        icon: guideSVG.svgFacebook
+
+    },
+    {
+        link: '#',
+        text: 'instagram',
+        icon: guideSVG.svgInstagram
+    },
+    {
+        link: '#',
+        text: 'Вконтакте',
+        icon: guideSVG.svgVk
+    },
+    {
+        link: '#',
+        text: 'Telegram',
+        icon: guideSVG.svgTelegram
     },
 ];

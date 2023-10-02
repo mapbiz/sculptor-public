@@ -10,7 +10,7 @@ export default function Nav(props) {
     // console.log(router);
 
     return (
-        <nav className={'header-nav group flex flex-col gap-10'}>
+        <nav className={'header-nav flex flex-col gap-10'}>
             { navLinks && navLinks.map((item, index) => {
 
                 return (

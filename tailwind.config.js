@@ -12,8 +12,9 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-      color: {
+      colors: {
         'ochre': '#CCB35B',
+        'c-grey': '#FFFFFF99',
       },
       screens: {
         '3xl': '1706px',
@@ -26,7 +27,8 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-montserrat)'],
         unbounded: ['var(--font-unbounded)'],
-        montserrat: ['var(--font-montserrat)']
+        montserrat: ['var(--font-montserrat)'],
+        exo2: ['var(--font-exo2)']
       },
     },
   },
